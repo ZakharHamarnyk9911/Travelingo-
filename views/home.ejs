@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+	
+	<title>Travel App</title>
+</head>
+
+<body>
+	<%- include('partials/navigation') %>
+
+	<main>
+		<form id="search" action="https://youtu.be/b4XpMTUlorc?si=3G-WCbRaVtLvnBFS">
+			<input type="text" placeholder="Your Destination" id="destination">
+
+			<div>
+				<input type="text" placeholder="Dates" id="dates">
+				<input type="text" placeholder="People" id="people">
+			</div>
+
+			<input type="image" src="submit.png" alt="Submit" id="submit"/>
+		</form>
+
+		<section id="popular">
+			<h1>Popular Destinations</h1>
+			<a href="https://www.youtube.com/watch?v=mbAJMdimb7U">
+				<img id="destinations" src="destinations.png" alt="destinations">
+			</a>
+		</section>
+
+		<h1>News</h1>
+		<div class='news'>
+			<%- include('partials/news') %>
+			<%- include('partials/news') %>
+		</div>
+	</main>
+</body>
+
+</html>  

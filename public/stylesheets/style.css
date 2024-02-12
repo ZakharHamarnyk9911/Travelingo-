@@ -1,0 +1,267 @@
+body  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFCE6;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 35px auto;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #F6F4ED;
+}
+
+
+
+
+/*mobile version*/
+@media only screen and (max-width: 480px) {
+
+    /*home page*/
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    nav a+a {
+        margin-left: 20px;
+    }
+
+    .smaller_img {
+        padding: 5px 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    main #search #destination {
+        background-color: #FFFCE6;
+        width: 100%;
+        padding: 14px 0;
+        border-radius: 20px;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px;
+        margin-bottom: 2px;
+    }
+
+    main #search div {
+        display: flex;
+    }
+
+    main #search #dates {
+        background-color: #FFFCE6;
+        width: 50%;
+        padding: 14px 0;
+        border-radius: 20px 0 0 20px;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px 1px 2px 2px;
+    }
+
+    main #search #people {
+        background-color: #FFFCE6;
+        width: 50%;
+        padding: 14px 0;
+        border-radius: 0 20px 20px 0;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px 2px 2px 1px;
+    }
+
+    main #search #submit {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
+    }
+
+    main h1 {
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    #popular #destinations {
+        width: 100%;
+    }
+
+    .post img {
+        margin: -10px 0px;
+    }
+
+    .post p {
+        font-size: 22px;
+        color: black;
+        margin: 10px 0px 25px 0px;
+    }
+
+    /*Login page*/
+
+    h1.auth {
+        font-size: 25px;
+        font-weight: 600;
+        width: fit-content;
+        margin: 150px auto 50px;
+    }
+
+    main#auth .email,
+    .password,
+    .fullName {
+        background-color: #FFFCE6;
+        width: 90%;
+        font-size: 15px;
+        margin: auto 0px;
+        padding: 12px 15px;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    main#auth p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    main#auth #submit {
+        display: block;
+        margin: 40px auto;
+        width: 55%;
+        background-color: #FF6933;
+        color: #fff;
+        padding: 12px 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+}
+
+/*Desktop version*/
+
+@media only screen and (min-width: 481px) {
+
+    body{
+        width: 90%;
+    }
+
+    /*home page*/
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    nav a+a {
+        margin-left: 20px;
+    }
+
+    .smaller_img {
+        padding: 5px 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    main {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    main form#search{
+        width: 40%;
+        margin: auto;
+    }
+
+    main #search #destination {
+        font-size: 20px;
+        background-color: #FFFCE6;
+        width: 100%;
+        padding: 18px 0;
+        border-radius: 30px;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px;
+    }
+
+    input::placeholder {
+        font-size: 20px;
+    }
+
+    main #search div {
+        display: flex;
+    }
+
+    main #search #dates {
+        font-size: 20px;
+        background-color: #FFFCE6;
+        width: 50%;
+        padding: 18px 0;
+        border-radius: 30px 0 0 30px;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px 1px 2px 2px;
+    }
+    
+
+    main #search #people {
+        font-size: 20px;
+        background-color: #FFFCE6;
+        width: 50%;
+        padding: 18px 0;
+        border-radius: 0 30px 30px 0;
+        border-style: solid;
+        text-align: center;
+        border-width: 2px 2px 2px 1px;
+    }
+
+    main #search #submit {
+        display: block;
+        margin: 10px auto;
+        width: 40%;
+    }
+
+    main h1 {
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        margin-top: 80px;
+        font-size: 32px;
+    }
+
+    #popular #destinations {
+        width: 20%;
+    }
+
+    .post img {
+        margin: -10px 0px;
+    }
+
+    .post p {
+        font-size: 22px;
+        color: black;
+        margin: 10px 0px 25px 0px;
+    }
+
+    div.news{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+    }
+
+}
